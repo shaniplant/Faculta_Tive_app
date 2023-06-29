@@ -13,8 +13,8 @@ st.markdown("<h1 style='text-align: center;'>פקולטה - טיב 👋</h1>", u
 
 st.sidebar.success("עזרו לנו להגיע לכמה שיותר סטודנטים")
 
-#htp = "https://raw.githubusercontent.com/shaniplant/Faculta_Tive_app/main/images/landing%20page.jpg"
-htp = "G:\My Drive\Faculta_tive\images\landing page.jpg"
+htp = "https://raw.githubusercontent.com/shaniplant/Faculta_Tive_app/main/images/landing%20page.jpg"
+#htp = "G:\My Drive\Faculta_tive\images\landing page.jpg"
 image = Image.open(htp)
 st.image(image, caption='image of vision')
 st.markdown("<h3 style='text-align: center;'>פקולטה - טיב הוא אתר שנועד לעזור לנו הסטודנטים ולסטודנטים לעתיד לשפר את איכת ההוראה והיחס לסטודנטים בפקולטות השונות. תחרות יוצרת שיפור</h3>", unsafe_allow_html=True)
