@@ -7,26 +7,29 @@ st.set_page_config(
     page_title="Hello",
     page_icon="👋",
 )
-_, center, _ = st.columns(3)
-with center:
-    st.write("# פקולטה - טיב 👋")
 
-    st.sidebar.success("Select")
+st.markdown("<h1 style='text-align: center;'>פקולטה - טיב 👋</h1>", unsafe_allow_html=True)
+#st.write("# פקולטה - טיב 👋")
 
-    htp = https://github.com/shaniplant/Faculta_Tive_app/images/landing page.jpg
-    image = Image.open(htp+'/landing_page.jpg')
-    st.image(image, caption='image of vision')
+st.sidebar.success("עזרו לנו להגיע לכמה שיותר סטודנטים")
 
-    st.markdown(
-        """
-        פקולטה - טיב הוא אתר שנועד לעזור לנו הסטודנטים ולסטודנטים לעתיד לשפר את איכת ההוראה והיחס לסטודנטים בפקולטות השונות. תחרות יוצרת שיפור
-        **👈 עזרו לנו במילוי הסקר**
-        ### אודותינו
-        אני דביר
-        ### כבר השפיעו
+#htp = "https://raw.githubusercontent.com/shaniplant/Faculta_Tive_app/main/images/landing%20page.jpg"
+htp = "G:\My Drive\Faculta_tive\images\landing page.jpg"
+image = Image.open(htp)
+st.image(image, caption='image of vision')
+st.markdown("<h3 style='text-align: center;'>פקולטה - טיב הוא אתר שנועד לעזור לנו הסטודנטים ולסטודנטים לעתיד לשפר את איכת ההוראה והיחס לסטודנטים בפקולטות השונות. תחרות יוצרת שיפור</h3>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>👈 עזרו לנו במילוי הסקר</h2>", unsafe_allow_html=True)
 
-    """
-    )
+
+want_to_contribute = st.button("אני רוצה להצביע!")
+if want_to_contribute:
+    switch_page("survey 😷 ")
+
+
+st.markdown("<h1 style='text-align: center;'>אודותינו</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>סטודנטים לרפואה מתעבדים להתקבל ואז מתיחסים אליהם חרא</h3>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>מה המצב? </h2>", unsafe_allow_html=True)
+
 
 col1, col2, col3 = st.columns(3)
 
