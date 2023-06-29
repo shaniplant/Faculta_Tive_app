@@ -1,4 +1,14 @@
 streamlit ==1.23.1
-plotly==5.1.0
+#streamlit == 1.16.0
+
 #mysqlclient==2.2.0
 #SQLAlchemy==2.0.16
+pymongo == 3.12.0
+
+
+plotly==5.1.0
+pandas ==1.5.3
+
+
+streamlit-survey == 0.1.0
+streamlit-extras 0.2.7
